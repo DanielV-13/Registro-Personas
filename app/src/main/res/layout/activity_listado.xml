@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEBEC"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.Listado">
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Regresar"
+        android:text="Regresar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tblistado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*" />
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
